@@ -32,5 +32,10 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="decompiled_libs\**" />
+    <None Include="decompiled_libs\**" />
+  </ItemGroup>
+
 </Project>
 
