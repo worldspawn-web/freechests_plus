@@ -1,7 +1,7 @@
 # FreeChestsPlus
 
 [![Thunderstore](https://img.shields.io/badge/Thunderstore-Download-blue)](https://thunderstore.io/c/megabonk/p/bihop/FreeChestsPlus/)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/worldspawn-web/freechests_plus/releases)
+[![Version](https://img.shields.io/badge/version-1.0.3-green.svg)](https://github.com/worldspawn-web/freechests_plus/releases)
 [![BepInEx](https://img.shields.io/badge/BepInEx-6.0.0-purple.svg)](https://github.com/BepInEx/BepInEx)
 
 A mod for **Megabonk** that not only makes chests free, but also patches the HUD counters of gold and current chest price.
