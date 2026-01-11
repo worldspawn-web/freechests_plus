@@ -3,5 +3,5 @@
     "version_number": "1.0.2",
     "website_url": "https://github.com/worldspawn-web/freechests_plus",
     "description": "Makes all chests free. Contains HUD counter fixes for gold and current chest price.",
-    "dependencies": []
+    "dependencies": ["BepInEx-BepInExPack_IL2CPP-6.0.738"]
 }
