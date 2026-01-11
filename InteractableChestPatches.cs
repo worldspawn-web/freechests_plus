@@ -37,7 +37,6 @@ internal static class InteractableChestPatches
 							if (player != null)
 							{
 								cachedPlayer = player;
-								Logger.LogInfo($"[GetPlayer] Found player via GameManager.Instance.player");
 								return player;
 							}
 						}
@@ -64,61 +63,18 @@ internal static class InteractableChestPatches
 	}
 
 	[HarmonyPatch("Interact")]
-	[HarmonyPrefix]
-	private static void Interact_Prefix()
-	{
-		var player = GetPlayer();
-		float currentGold = player?.inventory?.gold ?? -1;
-		Logger.LogInfo($"[Interact_Prefix] Gold BEFORE interaction: {currentGold}");
-	}
-
-	[HarmonyPatch("Interact")]
 	[HarmonyPostfix]
 	private static void Interact_Postfix()
 	{
 		var player = GetPlayer();
 		if (player?.inventory == null)
-		{
-			Logger.LogWarning($"[Interact_Postfix] Player or inventory is null!");
 			return;
-		}
 		
 		float currentGold = player.inventory.gold;
-		Logger.LogInfo($"[Interact_Postfix] Gold AFTER interaction: {currentGold}");
 		
 		if (currentGold < 0)
 		{
 			Logger.LogWarning($"[Interact_Postfix] Gold went negative ({currentGold}), setting to 0");
-			player.inventory.gold = 0;
-		}
-	}
-
-	[HarmonyPatch("OpenChestImplementation")]
-	[HarmonyPrefix]
-	private static void OpenChest_Prefix()
-	{
-		var player = GetPlayer();
-		float currentGold = player?.inventory?.gold ?? -1;
-		Logger.LogInfo($"[OpenChest_Prefix] Gold BEFORE opening: {currentGold}");
-	}
-
-	[HarmonyPatch("OpenChestImplementation")]
-	[HarmonyPostfix]
-	private static void OpenChest_Postfix()
-	{
-		var player = GetPlayer();
-		if (player?.inventory == null)
-		{
-			Logger.LogWarning($"[OpenChest_Postfix] Player or inventory is null!");
-			return;
-		}
-		
-		float currentGold = player.inventory.gold;
-		Logger.LogInfo($"[OpenChest_Postfix] Gold AFTER opening: {currentGold}");
-		
-		if (currentGold < 0)
-		{
-			Logger.LogWarning($"[OpenChest_Postfix] Gold went negative ({currentGold}), setting to 0");
 			player.inventory.gold = 0;
 		}
 	}
