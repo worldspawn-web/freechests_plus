@@ -4,14 +4,14 @@ using HarmonyLib;
 using System.Reflection;
 using System.Linq;
 
-[BepInPlugin("com.megabonk.freechests", "Free Chests", "1.0.0")]
+[BepInPlugin("com.megabonk.freechestsplus", "FreeChestsPlus", "1.0.2")]
 public class FreeChestsPlugin : BasePlugin
 {
 	public override void Load()
 	{
-		Log.LogInfo("Free Chests mod loaded!");
+		Log.LogInfo("FreeChestsPlus mod loaded!");
 		
-		var harmony = new Harmony("com.megabonk.freechests");
+		var harmony = new Harmony("com.megabonk.freechestsplus");
 		harmony.PatchAll();
 	}
 }

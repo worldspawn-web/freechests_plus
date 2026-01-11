@@ -7,7 +7,7 @@ using BepInEx.Logging;
 [HarmonyPatch(typeof(InteractableChest))]
 internal static class InteractableChestPatches
 {
-	private static ManualLogSource Logger = BepInEx.Logging.Logger.CreateLogSource("FreeChests");
+	private static ManualLogSource Logger = BepInEx.Logging.Logger.CreateLogSource("FreeChestsPlus");
 	private static MyPlayer cachedPlayer = null;
 
 	private static MyPlayer GetPlayer()

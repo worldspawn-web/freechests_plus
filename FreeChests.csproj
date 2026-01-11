@@ -5,8 +5,8 @@
     <LangVersion>latest</LangVersion>
     <Nullable>disable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <AssemblyName>FreeChests</AssemblyName>
-    <RootNamespace>FreeChests</RootNamespace>
+    <AssemblyName>FreeChestsPlus</AssemblyName>
+    <RootNamespace>FreeChestsPlus</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
