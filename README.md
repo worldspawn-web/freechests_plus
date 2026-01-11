@@ -1,7 +1,7 @@
 # FreeChestsPlus
 
-[![Thunderstore](https://img.shields.io/badge/Thunderstore-Download-blue)](https://thunderstore.io/c/megabonk/p/worldspawn-web/FreeChestsPlus/)
-[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/worldspawn-web/megabonk_freechests/releases)
+[![Thunderstore](https://img.shields.io/badge/Thunderstore-Download-blue)](https://thunderstore.io/c/megabonk/p/worldspawn-web/freechests_plus/)
+[![Version](https://img.shields.io/badge/version-1.0.0-green.svg)](https://github.com/worldspawn-web/freechests_plus/releases)
 [![BepInEx](https://img.shields.io/badge/BepInEx-6.0.0-purple.svg)](https://github.com/BepInEx/BepInEx)
 
 A mod for **Megabonk** that not only makes chests free, but also patches the HUD counters of gold and current chest price.
@@ -24,7 +24,7 @@ A mod for **Megabonk** that not only makes chests free, but also patches the HUD
 ### Manual
 1. Download and install [BepInEx 6.0.0+ IL2CPP](https://github.com/BepInEx/BepInEx/releases) for your game
 2. Run the game once to generate BepInEx folders
-3. Download the latest release of from [Thunderstore](https://thunderstore.io/c/megabonk/p/worldspawn-web/FreeChestsPlus/) or [GitHub Releases](https://github.com/worldspawn-web/megabonk_freechests/releases)
+3. Download the latest release of from [Thunderstore](https://thunderstore.io/c/megabonk/p/worldspawn-web/freechests_plus) or [GitHub Releases](https://github.com/worldspawn-web/freechests_plus/releases)
 4. Extract `FreeChestsPlus.dll` into `BepInEx/plugins/` folder
 5. Launch the game
 
@@ -32,7 +32,7 @@ A mod for **Megabonk** that not only makes chests free, but also patches the HUD
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/worldspawn-web/megabonk_freechests.git
+   git clone https://github.com/worldspawn-web/freechests_plus.git
    cd FreeChests
    ```
 
